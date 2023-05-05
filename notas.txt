@@ -1,0 +1,4 @@
+Se agregó un nuevo div a la section sobreCreacionAnimacionesJS y se crearon sus clases y fueron agregadas a la hoja de estilos 
+se creó un h1 y se agregó la clase al CSS
+se modificaron las clases de la section
+se agregaron reglas del css 

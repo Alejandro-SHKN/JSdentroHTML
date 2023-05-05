@@ -1,0 +1,33 @@
+/* .sobreCreacionAnimacionesJS{} */
+.div__padreDivcontanerAnimaciones{
+    display: flex;
+    justify-content: center;
+}
+.div__containerAnimaciones{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.div__containerH1creandoAnimaciones{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.69);
+    width: 80%;
+    border-radius: 60px;
+}
+.h1__tituloCreandoAnimaciones{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.9rem;
+    text-align: center;
+    margin: 20px;
+    color: rgb(77, 77, 77);
+}
+.div__containerAnimacionesInfo{
+    background-color: rgba(255, 255, 255, 0.69);
+    border-radius: 30px;
+    width: 100%;
+    
+}
