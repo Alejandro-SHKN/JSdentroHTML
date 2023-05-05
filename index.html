@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/sobreCreacionDocumentosJS.css">
+    <link rel="stylesheet" href="./css/sobreCreacionAnimacionesJS.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <title>EL uso de JS en HTML</title>
+</head>
+
+<body>
+    <section class="sobreCreacionDocumentosJS">
+        <div class="div__padreDivcontainerH1">
+            <div class="div__containerH1">
+                <h1 class="h1__CreandoElementos">Creando elementos con JavaScript</h1>
+            </div>
+        </div>
+        <div class="div__containerInfoOrden" id="ID-div__containerInfoOrden">
+            <p class="p__infoOrden">Para agregar un elemento con JS ocuparemos este orden:</p>
+            <ul class="ul__orden">
+                <li class="li__orden"><b>Obtener la referencia del elemento principal</b> al que se va a agregar, en este caso el elemento principal de este div su id es: "ID-div__containerEjemplo1", entonces creamos una referencia de JS así <i class="i__ejemploJS">let divPrincipal = document.getElementById(`ID-div__containerInfoOrden`)</i></li>
+                <li class="li__orden"><b>Crear nuevo elemento</b> <i class="i__ejemploJS">let nuevoDiv = document.createElement(`div`);</i>, hasta aquí ya se creó, pero falta agregarlo a alguna parte del divPrincipal, pero antes de eso vamos a darle un contenido interno al div que acabamos de crear</li>
+                <li class="li__orden"><b>Se agrega el contenido al nuevo elemento</b> nuevoDiv.innerHTML = `< p >Este texto se agregó con JS< / p>`</li>
+                <li class="li__orden"><b>Agregar una clase</b> lo haremos con <i class="i__ejemploJS">divNuevo.classList.add(`p__parrafoJavascript`)</i></li>
+            </ul>
+            <p class="p__verResultado">Veamos el resultado:</p>
+
+            <div class="div__PadreDivcontainerEjemplo1">
+                <div class="div__containerEjemplo1" id="ID-div__containerEjemplo1">
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sobreCreacionAnimacionesJS">
+        <div class="div__padreDivcontanerAnimaciones"></div>
+    </section>
+    <script src="./JavaScript/JavaScript.js"></script>
+</body>
+
+</html>
