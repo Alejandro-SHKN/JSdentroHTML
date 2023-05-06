@@ -5,7 +5,7 @@
 }
 .div__containerH1{
     border-radius: 60px;
-    background-color: rgba(255, 255, 255, 0.69);
+    background-color: rgb(255, 255, 255);
     width: 90%;
     height: 10%;
 }
@@ -45,6 +45,7 @@
     text-align: center;
 }
 .div__PadreDivcontainerEjemplo1{
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
 }
@@ -52,9 +53,9 @@
 .div__containerEjemplo1{
     width: 20%;
     height: 75px;
-    background-color: rgba(70, 255, 178, 0.69);
+    background-color: rgba(255, 255, 255, 0.69);
     border-radius: 30px;
-    
+    margin-bottom: 20px;
 }
 
 .p__parrafoJavascript{

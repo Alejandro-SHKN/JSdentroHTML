@@ -14,8 +14,8 @@
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.69);
-    width: 80%;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
     border-radius: 60px;
 }
 .h1__tituloCreandoAnimaciones{
@@ -42,16 +42,20 @@
 }
 .button__mostrarOcultar{
     font-family: 'Montserrat', sans-serif;
-    border-radius: 20px;
+    width: 90px;
+    background-color: rgb(230, 255, 40);
+    border: none;
+    border-radius: 30px;
+    
 }
 /* Comienzo del DIV preload*/
 .div__preloadContainerAnimacionJS{
     opacity: 0;
+    border-radius: 30px;
     display: flex;
     justify-content: center;
-    background-color: rgba(255, 0, 0, 0.791);
+    background-color: rgb(255, 255, 255);
     width: 30%;
-    border-radius: 30px;
     
 }
 .div__preloadContainerAnimacionJS.Transition{
@@ -61,5 +65,75 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     margin: 10px;
+    
+}
 
+/* Creando Animaciones con JavaScript internamente */
+.div__PadrecontainerCreandoAnimacionesJSdirecto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.div_containerh2CreandoAnimacionesJSdirecto{
+    background-color: rgb(255, 255, 255);
+    border-radius: 60px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    
+}
+.div_containerCreandoAnimacionesJSdirecto{
+    border-radius: 60px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+.h2__creandoAnimacionesJSdirecto{
+    color: rgb(77, 77, 77);
+    font-size: 3rem;
+    margin: 16px;
+    text-align: center;
+    
+}
+.div__containerCreandoAnimaciones{
+    width: 80%;
+    border-radius: 30px;
+    /* height: 600px; */
+    background-color: rgba(255, 255, 255, 0.69);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button__animarNuevoDivCreadoConJS{
+    font-family: 'Montserrat', sans-serif;
+    width: 90px;
+    background-color: rgb(230, 255, 40);
+    border: none;
+    border-radius: 30px;
+}
+/*CSS del Div creado con JS desde 0*/
+
+.div__nuevoDivcreado{
+    background-color: white;
+    border-radius: 30px;
+    /* width: 80%; */
+    height: 10%;
+    opacity: 0;
+    height: auto;
+    /* transition: all 600ms ease-in-out; */
+}
+.transitionnuevoDivcreado{
+    transition: all 600ms ease-in-out;
+}
+.p__parrafoDivNuevo{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    transition: all 100ms ease-in-out;
+    opacity: 1;
+}
+.p__parrafoDivNuevo.transition{
+    transition: all 2s ease-in-out;
 }
