@@ -50,18 +50,22 @@ nuevoDiv.classList.add(`div__nuevoDivcreado`, `transitionnuevoDivcreado`);
 botonOcultarMostrarNuevoDiv.addEventListener(`click`, function () {
   nuevoDiv.innerHTML = `<p class="p__parrafoDivNuevo transition">Este parrafo se creó con JavaScript desde 0 </p>`;
   if (nuevoDiv.style.opacity == 0) {
+    botonOcultarMostrarNuevoDiv.style.backgroundColor = `rgb(3, 255, 3)`
+    botonOcultarMostrarNuevoDiv.textContent = `On`
     nuevoDiv.style.backgroundColor = `white`;
     divPadreNuevoDiv.appendChild(nuevoDiv);
     setTimeout(() => {
-        nuevoDiv.style.margin = `0`;
+        nuevoDiv.style.margin = `10px`;
     }, 100);
     setTimeout(() => {
         nuevoDiv.style.width = `90%`;
-      nuevoDiv.style.opacity = 1;
+        nuevoDiv.style.opacity = 1;
     }, 400);
     nuevoDiv.style.zIndex = `1`;
   } else {
-    nuevoDiv.style.width = `45%`;
+      botonOcultarMostrarNuevoDiv.textContent = `OFF`
+      botonOcultarMostrarNuevoDiv.style.backgroundColor = `red`
+      nuevoDiv.style.width = `45%`;
     nuevoDiv.style.backgroundColor = `rgba(255, 255, 255, 0.311)`;
     nuevoDiv.style.zIndex = `-1`;
     setTimeout(() => {
